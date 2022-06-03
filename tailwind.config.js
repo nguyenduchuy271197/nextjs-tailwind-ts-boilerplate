@@ -1,9 +1,13 @@
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-  ],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  mode: "jit",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    extend: {},
+  },
+  variants: {
     extend: {},
   },
   plugins: [],
